@@ -1,0 +1,130 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(233, 47%, 7%);
+}
+p{
+    font-size: 0.97vw;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.54);
+}
+h1{
+    font-size: 2vw;
+}
+h2{
+    font-size: 1.5vw;
+}
+main{
+    display: flex;
+}
+.discripiton{
+    width: 37vw;
+    height: 50vh;
+    min-width: 200px;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    padding: 50px 50px 50px 80px;
+    border-radius:5px 0px 0px 5px ;
+}
+.discripiton div{
+    display: flex;
+    margin-top: 4vh;
+    margin-right: 4vw;
+}
+.discripiton div > *{
+    display: flex;
+    flex-direction: column;
+
+}
+.discripiton div p{
+    font-size: 0.8vw;
+}
+.discripiton h1 span{
+    color: hsl(277, 64%, 61%);
+}
+.text{
+    margin-top: 2vh;
+}
+.discripiton .text,.header{
+    padding-right: 26%;
+}
+.imag{
+    width: 34vw;
+    height: 50vh;
+    min-width: 200px;
+    position: relative;
+
+}
+.imag img{
+    width: 34vw;
+    height: 50vh;
+    border-radius:0px 5px 5px 0px ;
+}
+.imag::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    width: 34vw;
+    height: 50vh;
+    background-color: hsla(277, 64%, 61%, 0.485);
+
+}
+
+@media (max-width: 800px){
+    main{
+        flex-direction: column-reverse;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 0.79rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    .discripiton{
+        padding: 9%;
+        height: 60vh;
+        width: 85vw;
+        text-align: center;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .discripiton div{
+        flex-direction: column;
+        margin-top: 1.5vh;
+    }
+    .imag{
+        height: 25vh;
+        width: 85vw;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .imag img{
+        height: 25vh;
+        width: 85vw;
+        
+    }
+    .imag::after{
+        height: 100%;
+        width: 100%;
+    }
+    .discripiton .text,.header{
+        padding-right: 0%;
+    }
+    .discripiton div p{
+        font-size: 0.65rem;
+        
+    }
+    .discripiton div {
+        margin-left: 20px;
+    }
+    
+}
